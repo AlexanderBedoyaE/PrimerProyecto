@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet"><!--se llaman los fondos directamente desde google font-->
+    <link rel="stylesheet" href="/assets/css/estilos.css"><!--  se llaman los estilos directamente del css -->
+    <link rel="shortcut icon" href="../img/logotipo-de-playstation.png" type="image/x-icon"><!--se llama un enlace para el logotipo de la pagina-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Clases de Juegos</title><!--Se le da un titulo al home-->
+</head>
+<body class="color">
+    <header class="header">
+        <div class="contenedorNav"><!--llamo en esta etiqueta div una clase llamada contenedor nav para que sea llamada en el css-->
+            <nav>
+                <div class="imagen"><!--al igual que la etiqueta de arriba es llamada por una clase para definir su estilo css-->
+                    <h1>
+                    <a href="/index.html">PLAYGAMES ART <img src="/img/espada.png" alt="imagenespada" id="arriba"></a>
+                    </h1><!--logo de la pagina dirigido a el home-->
+                </div>
+                <div class="menu"><!--Defino la clase menú y tambien la lista que me va a definir mi menú Principal-->
+                    <ul>
+                        <li><a href="/index.html"> Home </a></li>
+                        <li><a href="./clasesdejuegos.html"> Clases de juegos </a></li>
+                        <li><a href="./precios.html"> Precios </a></li>
+                        <li><a href="./noticias.html"> Noticias </a></li>
+                        <li><a href="./contactos.html"> Contactanos </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <br>
+    <main class="contenedorJuegos"><!--Defino estas etiquetas con las clases ya que ellas me van a ayudar a contener las imagenes puestas en la clase juegos-->
+        <aside class="contenedorMiniMenu">
+            <ul class="lista">
+                <li><a href="#aventuras"> Aventuras</a><!--este es el minimenú que esta en el lado izquierdo de la pagina web-->
+                    <ul id="subListas">
+                        <li><a href="#thelast">The last of Us</a></li>
+                        <li><a href="#bandicoot">Crash Bandicoot</a></li>
+                        <li><a href="#uncharted">Uncharted 4</a></li>
+                        <li><a href="#spiderman">Spiderman</a></li>
+                        <li><a href="#war">god of war</a></li>
+                    </ul>
+                </li>
+            
+                <li><a href="#accion"> Acción</a><!--este es el minimenú que esta en el lado izquierdo de la pagina web-->
+                    <ul id="subListas">
+                        <li><a href="#colosus">Shadow of the Colossus</a></li>
+                        <li><a href="#zero">Horizon Zero Down</a></li>
+                        <li><a href="#read">Read Dead Redemption 2</a></li>
+                        <li><a href="#warzone">Call Of Dutty Warzone</a></li>
+                        <li><a href="#watch">Watch Dogs Legion</a></li>
+                    </ul>
+                </li>
+            
+                <li><a href="#deportes"> Deportes</a><!--este es el minimenú que esta en el lado izquierdo de la pagina  web-->
+                    <ul id="subListas">
+                        <li><a href="#fifa">Fifa 21</a></li>
+                        <li><a href="#nba">Nba 2021</a></li>
+                        <li><a href="#tony">Tony Hawk´s 2</a></li>
+                        <li><a href="#ufc">Ufc 4</a></li>
+                        <li><a href="#pes21">Pes 21</a></li>
+                    </ul>    
+                </li>
+                <ul id="subir">
+                    <li><a href="#arriba"> Arriba</a></li><!--esta parte sube el programa-->
+                </ul>
+            </ul>
+        </aside>
+
+        <article class="contenedorImagenes"><!--en esta parte de aquí se van definiendo los juegos segúnsu categoria sean aventuras, accion y deportes -->
+        <div class="subtitulo">
+            <h2 id="aventuras">
+                AVENTURAS
+            </h2>
+        </div>
+        <div class="tarjet"><!--este div define todo el contenedor que va a ser modifica para que las imagenes entren-->
+            <article class="card">
+                <img src="/img/The_lastUs.jpg" alt="imagenthelast" id="thelast">
+                <div class="text">
+                    <h3>
+                        The last of Us 2
+                    </h3>
+                    <br>
+                    <p>Antes era el turno de Joel ahora es el turno de Ellie de ir por esta travesía con suspenso en busca de Abby.</p>
+                    <br>
+                    <button><a href="https://www.youtube.com/watch?v=qPNiIeKMHyg"> Ver Tráiler </a></button><!--Aquí defino un pequeño trailer-->
+                </div>
+            </article>
+            <article class="card"><!--este permite que las cartas sean acomodadas según a su estilo-->
+                <img src="/img/bandicoot.jpg" alt="imagencrash" id="bandicoot">
+                <div class="text">
+                    <h3>
+                        Crash Bandicoot N-sane trilogy
+                    </h3>
+                    <br>
+                    <p> Ayuda a crash junto a Aku Aku a vencer a Cortex en esta aventura con coco su hermana.</p>
+                    <br>
+                    <button><a href="https://www.youtube.com/watch?v=1Uai4Rd2wqY">Ver Tráiler</a></button><!--Aquí defino un pequeño trailer--><!--Aquí defino un pequeño trailer-->
+                </div>
+            </article>
+            <article class="card"><!--este permite que las cartas sean acomodadas según a su estilo-->
+                <img src="/img/uncharted.jpg" alt="imagenuncharted" id="uncharted">
+                <div class="text">
+                    <h3>
+                        Uncharted 4
+                    </h3>
+                    <br>
+                    <p> Natán descubre que su hermano a estado vivo al creer que había muerto en una prisión panameña. </p>
+                    <br>
+                    <button><a href="https://www.youtube.com/watch?v=ku02FEjm7jI"> Ver Tráiler </a></button><!--Aquí defino un pequeño trailer-->
+                </div>
+            </article>
+            <article class="card"><!--este permite que las cartas sean acomodadas según a su estilo-->
+                <img src="/img/spiderman.jpg" alt="imagenspiderman" id="spiderman">
+                <div class="text">
+                    <h3>
+                        Spider-man
+                    </h3>
+                    <br>
+                    <p> Spider-man el juego de aventura mejor visto en el Play desde sus inicios, ayúdalo a vencer a sus enemigos.</p>
+                    <br>
+                    <button><a href="https://www.youtube.com/watch?v=UpCrjE2hW-k"> Ver Tráiler </a></button><!--Aquí defino un pequeño trailer-->
+                </div>
+            </article>
+            <article class="card"><!--este permite que las cartas sean acomodadas según a su estilo-->
+                <img src="/img/god-of-war.jpg" alt="imagengodofwar" id="war">
+                <div class="text">
+                    <h3>
+                        god of war 
+                    </h3>
+                    <br>
+                    <p> Después de su historia en Grecia, kratos vuelve esta vez con un hijo y una aventura por descubrir.</p>
+                    <br>
+                    <button><a href="https://www.youtube.com/watch?v=AN3jEjjcZ-k"> Ver Tráiler </a></button><!--Aquí defino un pequeño trailer-->
+                </div>
+            </article>
+        </div> 
+        <div class="subtituloUno">
+            <h2 id="accion">
+                ACCIÓN
+            </h2>
+        </div>
+        <div class="tarjet"> 
+            <article class="card"><!--este permite que las cartas sean acomodadas según a su estilo-->
+                <img src="/img/colosus.jpg" alt="imagenshadowcolosus" id="colosus">
+                <div class="text">
+                    <h3> Shadow of the Colossus </h3>
+                    <br>
+                    <p> Wander debe de viajar a caballo para derrotar 16 gigantes y devolver la vida a una joven</p>
+                    <br>
+                    <button><a href="https://www.youtube.com/watch?v=PIpoaKrLf5g"> Ver Tráiler </a></button><!--Aquí defino un pequeño trailer-->
+                </div>    
+            </article>
+            <article class="card"><!--este permite que las cartas sean acomodadas según a su estilo-->
+                <img src="/img/horizonz.jpg" alt="imagenHorizonzero" id="zero">
+                <div class="text">
+                    <h3>
+                        Horizon Zero Down 
+                    </h3>
+                    <br>
+                    <p> El juego se ambienta en un mundo post-apocalíptico donde reina la naturaleza y las zonas rurales. </p>
+                    <br>
+                    <button><a href="https://www.youtube.com/watch?v=_BvZvkT5QHw"> Ver Tráiler </a></button><!--Aquí defino un pequeño trailer-->
+                </div>    
+            </article>
+            <article class="card"><!--este permite que las cartas sean acomodadas según a su estilo-->
+                <img src="/img/Red-Dead-Redemption-2.jpg" alt="imagenreddead" id="read">
+                <div class="text">
+                    <h3> Read Dead Redemption 2</h3>
+                    <br>
+                    <p> Entra al comienzo del fin del salvaje oeste con un wester para capturar los ladrones.</p>
+                    <br>
+                    <button><a href="https://www.youtube.com/watch?v=-8MN89fIaJ8"> Ver Tráiler </a></button><!--Aquí defino un pequeño trailer-->
+                </div>    
+            </article>
+            <article class="card"><!--este permite que las cartas sean acomodadas según a su estilo-->
+                <img src="/img/warzone.jpg" alt="imagenwarzone" id="warzone">
+                <div class="text">
+                    <h3> Call Of Dutty Warzone </h3>
+                    <br>
+                    <p> Un juego de acción donde podrás conectarte en linea con amigos. </p>
+                    <br>
+                    <button><a href="https://www.youtube.com/watch?v=qDQKeC5Vftk"> Ver Tráiler </a></button><!--Aquí defino un pequeño trailer-->
+                </div>    
+            </article>
+            <article class="card"><!--este permite que las cartas sean acomodadas según a su estilo-->
+                <img src="/img/watch_dogs.jpg" alt="imagenwatchdogs" id="watch">
+                <div class="text">
+                    <h3>
+                        Watch Dogs Legion 
+                    </h3>
+                    <br>
+                    <p> Trabaja en un mundo paralelo donde un hacker lucha para que todo el mal sea revelado. </p>
+                    <br>
+                    <button><a href="https://www.youtube.com/watch?v=F11svbrAaA0"> Ver Tráiler </a></button><!--Aquí defino un pequeño trailer-->
+                </div>    
+            </article>
+        </div>
+        <div class="subtituloUno">
+            <h2 id="deportes">
+                DEPORTES
+            </h2>
+        </div>
+        <div class="tarjet">
+            <article class="card"><!--este permite que las cartas sean acomodadas según a su estilo-->
+                <img src="/img/fifa.png" alt="imagenfifa" id="fifa">
+                <div class="text">
+                    <h3> 
+                        Fifa 21 
+                    </h3>
+                    <br>
+                    <p> Fifa 21 continua lo que viene siendo este juego deportivo con plantillas actualizadas.</p>
+                    <br>
+                <button><a href="https://www.youtube.com/watch?v=Jmliox1trPQ"> Ver Tráiler </a></button><!--Aquí defino un pequeño trailer-->
+                </div>
+            </article>    
+            <article class="card"><!--este permite que las cartas sean acomodadas según a su estilo-->
+                <img src="/img/nba.jpg" alt="imagennba" id="nba">
+                <div class="text">
+                    <h3> 
+                        Nba 2021 
+                    </h3>
+                    <br>
+                    <p> Nba 2021 un juego deportivo para aquellos amantes del basketball NBA</p>
+                    <br>
+                    <button><a href="https://www.youtube.com/watch?v=Ib5ygUYjHZI"> Ver Tráiler </a></button><!--Aquí defino un pequeño trailer-->
+                </div>
+            </article>
+            <article class="card"><!--este permite que las cartas sean acomodadas según a su estilo-->
+                <img src="/img/Tony.jpg" alt="imagentony" id="tony">
+                <div class="text">
+                    <h3> 
+                        Tony Hawk´s 2 
+                    </h3>
+                    <br>
+                    <p> Tony Hawk´s es un juego deportivo  para todos los amantes del skateboard en consola </p>
+                    <br>
+                    <button><a href="https://www.youtube.com/watch?v=6-eYJRR5lyE"> Ver Tráiler </a></button><!--Aquí defino un pequeño trailer-->
+                </div>
+            </article>
+            <article class="card"><!--este permite que las cartas sean acomodadas según a su estilo-->
+                <img src="/img/UFC.jpg" alt="imagenUfc4" id="ufc">
+                <div class="text">
+                    <h3> 
+                        Ufc 4 
+                    </h3>
+                    <br>
+                    <p> Ufc 4 es un juego de boxeo deportivo y es querido por amantes de este deporte </p>
+                    <br>
+                    <button><a href="https://www.youtube.com/watch?v=GjugTk9ovcI"> Ver Tráiler </a></button><!--Aquí defino un pequeño trailer-->
+                </div>
+            </article>
+            <article class="card"><!--este permite que las cartas sean acomodadas según a su estilo-->
+                <img src="/img/pes.jpg" alt="imagenpes21" id="pes21">
+                <div class="text">
+                    <h3> 
+                        Pes 21 
+                    </h3>
+                    <br>
+                    <p> Pes 21 es un juego deportivo actualizado en plantillas y juego a nivel de clubes</p>
+                    <br>
+                    <button><a href="https://www.youtube.com/watch?v=omQu1s5bxSo"> Ver Tráiler </a></button><!--Aquí defino un pequeño trailer-->
+                </div>
+            </article> 
+        </div>
+    </main>
+    <footer><!--Definición del Footer-->
+        <div class="red">
+            <ul>
+                <li class="redesSociales"><a href="https://www.instagram.com/"><img src="../img/Instagram.png" alt="icono1"></a></li> 
+                <li class="redesSociales"><a href="https://web.whatsapp.com/"><img src="../img/Whatsapp.png" alt="icono2"></a></li> 
+                <li class="redesSociales"><a href="https://www.facebook.com/"><img src="../img/facebook.png" alt="icono3"></a></li>
+                <li class="redesSociales"><a href="https://twitter.com/?lang=es"><img src="../img/twitter.png" alt="icono4"></a></li>
+                
+                <div class="parrafos">
+                    <p>Términos de uso y Condiciones</p> <p>© Derechos Reservados </p>
+                </div>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

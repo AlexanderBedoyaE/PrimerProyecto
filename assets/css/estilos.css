@@ -1,0 +1,647 @@
+/* ------------------------------------------Primera parte-------------------------------------------*/
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-color:black;
+    padding: 1em;
+    width: 100%;
+}
+
+
+.contenedorNav nav, .menu ul{
+    display: flex;
+    list-style-type:none;
+    flex-direction: row;
+    justify-content: flex-end;
+    border-bottom: none;
+    z-index: 9999;
+}
+
+.contenedorNav nav ul li a{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 15px;
+}
+
+.titulo{
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.856);
+    padding: 20px 10px 20px 10px;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.contenedorNav nav ul li:hover{
+    cursor: pointer;
+    background-color: gray;
+}
+
+.imagen img{
+    width: 25px;
+    margin-right: 550px;
+}
+
+.imagen h1 a{
+    text-decoration: none;
+}
+
+.imagen h1 img a{
+    display: flex;
+    justify-content: left;
+}
+
+.imagen h1 a{
+    display: flex;
+    justify-content: left;
+    color: white;
+}
+/*-------------------------------------------final de la primera parte (header)---------------------------------------*/
+/*-------------------------------------------Comienzo de la segunda parte (body)---------------------------------------*/
+.subtitulo {
+    text-align: center;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 12em 0px 12em;
+    padding: 0px 0px 0px 0px;
+    background-color: black;
+}
+
+.subtituloUno{
+    text-align: center;
+    color:white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin: 10px 12em 10px 12em;
+    padding: 0px 10px 0px 10px;
+    background-color: black;
+}
+
+.contenedorAside {
+    background-image: url(/img/imagenspi.gif);
+    width: 100%;
+    height: 95vh;
+    flex: 1;
+    padding: 15rem;
+    flex-grow: 15;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.fondo{
+    background-image: url(/img/fondoprecios.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#contenedor{
+    width: 99%;
+    margin: 5px 10px 0px 10px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns:repeat(3, auto);
+    grid-template-rows:repeat(3, auto);
+    grid-template-areas:"contenedorImg contenedorImg contenedorLado"
+                        " widgets1 widgets2 contenedorLado"
+                        " widgets1 widgets2 contenedorLado";        
+}
+
+#contenedor > div,
+#contenedor >.contenedorImg,
+#contenedor .contenedorLado,
+#contenedor .widgets1,
+#contenedor .widgets2{
+    padding: 30px;
+    border-radius: 4px;
+}
+
+#contenedor .contenedorImg{
+    grid-area: contenidoImg;
+    grid-row: 1/3;
+    grid-column: 1/3;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+.trasFondo{
+    background-image:url(/img/fondoimg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+#grid{
+    width: 99%;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns:repeat(3, auto);
+    grid-template-rows:repeat(2, auto);
+    grid-template-areas:"container2 container2 container"
+                        "container2 container2 container";
+}
+
+#grid .container,
+#grid .container2{
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.856);
+    border-radius: 3px;
+    color: white;
+}
+
+#grid .container{
+    grid-area: container;
+    margin-bottom: 10px;
+}
+
+#grid .container h2{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#grid .container2{
+    grid-area: container2;
+    margin-left: 10px;
+    background-color: rgba(0, 0, 0, 0.856);
+    color: white;
+    margin-bottom: 10px;
+}
+
+.container2 .texto img{
+    margin-left: 210px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.container2 .texto p{
+    font-size: 24px;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+
+
+main{
+    display: flex;
+    flex: 1;
+}
+
+.container2 .texto h2{
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.container2 .textoUno img{
+    margin-left: 210px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    width: 480px;
+    height: 270px;
+    }
+
+
+.container2 .textoUno p{
+    font-size: 24px;
+    font-family: 'Noto Sans', sans-serif;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.container2 .textoUno h2{
+    text-align: center;
+    font-size: 36px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#contenedor > .contenedorLado{
+    grid-area: contenedorLado;
+    display: flex;
+    grid-row: 4/-4;
+    grid-column: -1/-2;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+#contenedor .widgets1{
+    grid-area: widgets1;
+    grid-row: 3/-2;
+    grid-column: -4/-3;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    background-image: url(/img/play-5.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: transform .2s;
+}
+
+#contenedor .widgets1 p{
+    color: black;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 60px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+#contenedor .widgets1:hover{
+    transform: scale(1.1);
+}
+
+#contenedor .widgets2{
+    grid-area: widgets2;
+    grid-row: 3/-2;
+    grid-column: -3/-2;
+    margin-bottom: 10px;
+    display: flex;
+    background-image: url(/img/play4.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    transition: transform .2s;
+}
+
+#contenedor .widgets2 p{
+    color: white;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 60px;
+    margin-left: 200px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#contenedor .widgets2:hover{
+    transform: scale(1.1);
+}
+
+.tituloPrecios .subtituloPrecios{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    background-color: black;
+    margin: 10px 40% 20px 40%;
+    color: white;
+}
+
+.subtituloLado .subtiPrecio{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin: 0px 0px 20px 15px;
+    background-color: black;
+    color: white;
+}
+
+.atras{
+    background-image: url(/img/playstation.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contenedorArticle  {
+    background-image: url(/img/PS-Now.png);
+    flex: 1;
+    padding: 15rem;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+}
+
+form{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: normal;
+    background-color:rgba(0, 0, 0, 0.842);
+    margin: 100px;
+    color:white;
+}
+
+form h2{
+    font-size: 70px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+form label{
+    font-size:25px ;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+input{
+    height: 4vh;
+    border-radius: 10px;
+}
+
+select{
+    height: 4vh;
+    border-radius: 10px;
+}
+
+form .checkbox{
+    height: 1rem;
+}
+
+form .enviar{
+    height: 6vh;
+}
+
+.color{
+    background-image: url(/img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.paginasAsociadas{
+    display: flex; 
+    flex-direction: row;
+    align-items:center;
+    justify-content:space-evenly;
+    background-color: rgba(0, 0, 0, 0.856);
+}
+
+.paginasAsociadas div{
+    width: 25%;
+    background-color: gray;
+    height: 30vh;
+    margin-bottom: 20px;
+}
+
+.parrafo{
+    margin: 20px 10px 20px 10px;
+    text-align: center;
+}
+
+.paginasAsociadas .text> .boton {
+    text-decoration: none;
+    border:0;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 120px;
+    text-align: center;
+    justify-content: center;
+}
+
+.paginasAsociadas .text .boton>a {
+    text-decoration: none;
+    color: gray;
+}
+
+.paginasAsociadas .text>.boton:hover {
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+
+.paginasAsociadas .text .boton>a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.contenedorJuegos{
+    display: flex;
+}
+
+.contenedorMiniMenu{
+    flex: 1;
+    flex-grow: 5;
+    padding: 1rem;
+    width: 40vw;
+    height: 98%;
+    background-color: black;
+    border-radius: 5px;
+}
+
+.contenedorMiniMenu ul{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    margin-bottom: 30px;
+}
+
+.contenedorMiniMenu ul li{
+    margin: 5px 0px 10px 0px;
+    list-style-type: none;
+    text-decoration: none;
+    border-bottom:3px solid white ;
+}
+
+.contenedorMiniMenu ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.contenedorMiniMenu ul li> a:hover{
+    background-color: rgba(128, 128, 128, 0.541); 
+}
+
+.contenedorImagenes{
+    flex: 1;
+    flex-grow: 30;
+    padding: 1px;
+}
+
+.contenedorMiniMenu #subListas{
+    margin: 10px 0px 60px 10px;
+    padding: 10px 0px 10px 10px;
+}
+
+#subir{
+    margin: 40px;
+}
+
+.tarjet{
+    display: flex;
+    flex-wrap: wrap;
+    align-items:center;
+    margin: 10px 0px 10px 10px;
+    width: 1150px;
+}
+
+.card{
+    flex: 1;
+    margin: 10px;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 2px 2px 6px 0px  rgba(0, 0, 0, 0.473);
+    transition: transform .2s;
+}
+
+.organizarImagenes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:center;
+}
+
+.cardPrecio img{
+    border:3px solid black;
+    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    margin-left: 15px;
+    transition: transform .2s;
+} 
+
+.cardPrecio .precio{
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    background-size: auto;
+}
+
+.cardPrecioUno .textCambioUno .su{
+    font-size: 30px;
+}
+
+.textCambioUno .precioDos{
+    text-align: justify;
+    margin-top: 10px;
+    margin-bottom: 200px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    background-size: auto;
+}
+
+.cardPrecioUno img{
+    border:3px solid black;
+    box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    margin-left: 65px;
+    transition: transform .2s;
+}
+
+.cardPrecioUno img:hover{
+    transform: scale(1.3);
+}
+
+.cardPrecio .textCambio .precio span{
+    text-decoration: 2px line-through;
+}
+
+.cardPrecio img:hover{
+    transform: scale(1.3);
+}
+
+.cardPrecio .textCambio{
+    padding: 0 20px 20px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+}
+
+.cardPrecio .textCambio > h3{
+    background-color: black;
+    color: white;
+}
+
+.card:hover{
+    background-color: rgba(128, 128, 128, 0.541);
+    transform: scale(1.2);
+    }
+
+.card img{
+    max-width: 100%;    
+}
+
+.card .text{
+    padding: 0 20px 20px;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+}
+
+.card .text:hover{
+    color: white;
+}
+
+.card .text>button{
+    background: gray;
+    border:0;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+.card .text button>a{
+    text-decoration: none;
+    color: white;
+
+}
+
+h3{
+    text-align: center;
+    font-weight: bold;
+}
+/*----------------------------------------------------final de la segunda parte (body)--------------------------------*/
+/*----------------------------------------------------Comienzo de la tercera Parte(footer)-----------------------------*/
+footer{
+    background-color: black;
+    padding: 1rem;
+    width: 100%;
+}
+
+footer p{
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+footer .red ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.redesSociales a img{
+    width: 40px;
+    margin-left: 20px;
+}
+
+.red .parrafos{
+    margin-left: 330px;
+}
+/*----------------------------------------------------final de la tercera Parte(footer)-----------------------------*/
+
+

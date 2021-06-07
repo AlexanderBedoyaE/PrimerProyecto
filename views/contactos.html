@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/estilos.css"><!-- se llaman los estilos directamente del css -->
+    <link rel="shortcut icon" href="../img/logotipo-de-playstation.png" type="image/x-icon"><!--se llama un enlace para el logotipo de la pagina-->
+    <link rel="preconnect" href="https://fonts.gstatic.com"><!--se llaman los fondos directamente desde google font-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+    
+    <title>Contacto</title><!--Se le da un titulo al home-->
+</head>
+<body class="atras">
+    <header>
+        <div class="contenedorNav"><!--llamo en esta etiqueta div una clase llamada contenedor nav para que sea llamada en el css-->
+            <nav>
+                <div class="imagen"><!--llamo en esta etiqueta div una clase llamada contenedor nav para que sea llamada en el css-->
+                    <h1>
+                        <a href="/index.html">PLAYGAMES ART<img src="/img/espada.png" alt="imagenespada"></a><!--logo de la pagina dirigido a el home-->
+                    </h1>
+                </div>
+                <div class="menu"><!--Defino la clase menú y tambien la lista que me va a definir mi menú Principal-->
+                    <ul>
+                        <li><a href="/index.html"> Home </a></li>
+                        <li><a href="./clasesdejuegos.html"> Clases de juegos </a></li>
+                        <li><a href="./precios.html"> Precios </a></li>
+                        <li><a href="./noticias.html"> Noticias </a></li>
+                        <li><a href="./contactos.html"> Contactanos </a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main> 
+        <form><!--ETIQUETA DE FORMULARIO-->
+            <h2><!--SUBTITULO-->
+                Contacto
+            </h2>
+            <br>
+            <br>
+            <label>Nombre</label><!--NOMBRE DEL LABEL-->
+            <br>
+            <input type="text" name="nombre" placeholder="Ingresa tu nombre por favor" size="25" required class="nombre"><!--SE DEFINE UNA CASILLA TIPO TEXTO PARA ESCRIBIR LOS DATOS-->
+            
+            <br>
+            <br>
+            
+            <label>Apellidos</label><!--NOMBRE DEL LABEL-->
+            <br>
+            <input type="text" name="apellidos" placeholder="Ingresa tus apellidos por favor" size="25" required><!--SE DEFINE UNA CASILLA TIPO TEXTO PARA ESCRIBIR LOS DATOS-->
+            
+            <br>
+            <br>
+            
+            <label>Email</label><!--NOMBRE DEL LABEL-->
+            <br>
+            <input type="email" name="email" placeholder="Ingresa tu email por favor" size="25" required><!--SE DEFINE UNA CASILLA TIPO EMAIL PARA ESCRIBIR LOS DATOS-->
+            
+            <br>
+            <br>
+            
+            <label> Selecciona el Servicio de tu interés</label><!--NOMBRE DEL LABEL-->
+            <br>
+            <select name="servicio" required><!--CASILLA DE SELECCION-->
+                <option value="">Seleccione</option><!--OPCIONES DE SELECCION-->
+                <option value="Compra de juegos">Compra de Juegos</option>
+                <option value="pregunta">Pregunta</option>
+                <option value="no seleccionar">No Seleccionar</option>
+            </select>
+            
+            <br>
+            <br>
+
+            <label> Selecciona los juegos de su interés </label><!--NOMBRE DEL LABEL-->
+            <br>
+            <select name="instrumento" required><!--CASILLA DE SELECCION-->
+                <option value="">Seleccione</option><!--OPCIONES DE SELECCION-->
+                <option value="Crash Bandicoot">Crash Bandicoot</option>
+                <option value="Spiderman">Spiderman</option>
+                <option value="The last of US">The last of Us ll</option>
+                <option value="Uncharted 4">Uncharted 4</option>
+                <option value="Spiderman Miles">Spiderman Miles</option>
+                <option value="god of war">god of war</option>
+                <option value="Tomb Raider">Tomb Raider</option>
+                <option value="Shadow of the Colossus">Shadow of the Colossus</option>
+                <option value="Otro">Otro</option>
+                <option value="Ninguno">Ninguno</option>
+            </select>
+
+            <br>
+            <br>
+            <br>
+            
+            <label> Te gustaría recibir información sobre ofertas y promociones de videojuegos</label><!--NOMBRE DEL LABEL-->
+            <input type="checkbox" name="aceptar" value="1"  class="checkbox"><!-- casillas de tipo checkbox-->
+            
+            <br>   
+            <br>
+            
+            <label> Motivo </label><!--NOMBRE DEL LABEL-->
+            <br>
+            <textarea name="motivo" id="" cols="50" rows="15" required></textarea><!--CASILLAS DE TIPO TEXTO-->
+            
+            <br>
+            <br>
+            
+            <label> Aceptarias autorizar el tratamiento de datos, que se utilizara con fines de almacenamiento a base de datos y ofrecimiento de servicios</label><!--NOMBRE DEL LABEL-->
+            <input type="checkbox" name="autorizacion" value="1" class="checkbox" required><!-- casillas de tipo checkbox-->
+            
+            <br>
+            <br>
+            
+            <input type="submit" value="Enviar Formulario" class="enviar"><!--boton de enviar el formulario-->
+            
+            <br>
+            <br>
+        
+        </form>
+    </main>    
+    <footer><!--Definición del Footer-->
+        <div class="red">
+            <ul>
+                <li class="redesSociales"><a href="https://www.instagram.com/"><img src="../img/Instagram.png" alt="icono1"></a></li> 
+                <li class="redesSociales"><a href="https://web.whatsapp.com/"><img src="../img/Whatsapp.png" alt="icono2"></a></li> 
+                <li class="redesSociales"><a href="https://www.facebook.com/"><img src="../img/facebook.png" alt="icono3"></a></li>
+                <li class="redesSociales"><a href="https://twitter.com/?lang=es"><img src="../img/twitter.png" alt="icono4"></a></li>
+                
+                <div class="parrafos">
+                    <p>Términos de uso y Condiciones</p> <p>© Derechos Reservados </p>
+                </div>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
